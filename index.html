@@ -2,6 +2,7 @@
 <html>
   <head>
     <title> Thermostat</title>
+    <link rel="stylesheet" href="css/colour.css"
   </head>
   <body>
     <section>
@@ -12,9 +13,21 @@
         <button id="temperature-reset">reset</button>
         power saving mode is <span id="power-saving-status">on</span>
         <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSN off</button>
+        <button id="powersaving-off">PSM off</button>
       </p>
     </section>
-    <script> src="src/thermostat.js"></script>
+    <section>
+      <h1>Current temperature: <span id='current-temperature'>20</span></h1>
+        <select id="current-city">
+          <option value="london">London</option>
+          <option value="newyork">New York</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</opyion>
+        </select>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="src/thermostat.js"></script>
+    <script src="src/interface.js"></script>
   </body>
 </html>
